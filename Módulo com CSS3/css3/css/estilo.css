@@ -1,0 +1,61 @@
+/*#box{
+    width: 300px;
+    height: 300px;
+    background: url("../img/camera.png");
+}
+#box h1{
+    background: rgba(60, 119, 197, 0.5);
+    border-bottom: 2px solid gray;
+}   */
+
+/*#box{
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(red, yellow);
+    text-shadow: 10;
+}*/
+
+
+/*******Criar a animação********/
+/*
+@keyframes animacao-box{
+    from{
+        background: red;
+        border-radius: 0px; 
+        top: 0; 
+        left: 0;
+    }
+    to{background: yellow; border-radius: 300px; top: 200px; left: 200px;}
+}
+/*Animações*/
+/*
+#box-animacao{
+    background: red;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation-name: animacao-box;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+
+    animation: animacao-box 5s 3s 2 alternate
+}
+h1{
+    text-align: center;
+    padding-top: 30px;
+}
+*/
+
+/****Transições****/
+#box-transicao{
+    width: 300px;
+    height: 300px;
+    background: orange;
+}
+#box-transicao:hover{
+    width: 320px;
+    background: yellow;
+    transition: all 1s;
+}

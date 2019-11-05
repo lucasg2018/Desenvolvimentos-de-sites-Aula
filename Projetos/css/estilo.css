@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: radial-gradient(pink, yellow);
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+header{
+    background: rgb(224, 198, 220);
+    border-bottom: 1px solid rgb(107, 98, 98);
+    height: 43px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+h1{
+    margin: 0;
+    float: left;
+    text-shadow: 2px 4px 3px gray;
+}
+nav{
+    padding-top: 10px;
+    float: right;
+}
+article{
+    width: 800px;
+    margin: 53px auto 25px auto;
+}
+section{
+    background: rgb(223, 172, 233);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    font-weight: bold;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+#menu{
+    width: 800px;
+    margin: 0 auto;
+}
+#cor-logo{
+    color: rgb(190, 80, 190);
+}
+/****Links****/
+a{
+    text-decoration: none;
+    color: rgb(153, 107, 194);
+    font-weight: bold;
+    padding-right: 10px;
+}
+a:link{
+    color: rgb(153, 107, 194);
+}
+a:hover{
+    color: rgb(233, 13, 203);
+}
