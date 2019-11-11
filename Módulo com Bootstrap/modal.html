@@ -24,9 +24,58 @@
 
    		<div class="page-header">
             <h1>
-                Modal
+                Bootstrap Modal Windows
             </h1>
         </div>
+
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#janela">
+            Logar
+        </button>
+
+        <!--Janela-->
+        <form class="modal fade" id="janela">
+            
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  
+                    <!--Cabeçalho-->
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title"><strong>Efetuar login</strong></h4>
+                    </div>
+
+                    <!--Corpo-->
+                    <div class="modal-body">
+                        <div class="form-group"> 
+
+                            <label for="e-mail"></label>
+                            <input type="email" id="e-mail" class="form-control" placeholder="digite seu e-mail"></input>
+                            
+                            <label for="senha"></label>
+                            <input type="password" id="senha" class="form-control" placeholder="digite sua senha"></input>
+
+                        </div>
+                    </div>
+
+                    <!--Rodape-->
+                    <div class="modal-footer">
+                        
+                        <button type="button" class="btn btn-default" data-dismiss="modal">
+                            Cancelar
+                        </button>
+
+                        <button type="submit" class="btn btn-primary">
+                            Logar
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
 
    	</div> 
 
