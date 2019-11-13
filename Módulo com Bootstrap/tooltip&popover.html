@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap</title>
+    <title>Modal Windows</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,32 +19,54 @@
     <![endif]-->
   </head>
   <body>
-    
-   	<div class="container marcador2">
-   		
-   		<div class="row">
 
-   			<div class="col-xs-6 col-sm-10 col-md-2 col-lg-10 marcador">
-   				<h1>1</h1>
-   			</div>
+   	<div class="container">
 
-   			<div class="col-xs-6 col-sm-2 col-md-10 col-lg-2 marcador">
-   				<h1>2</h1>
-   			</div>
+   		<div class="page-header">
+            <h1>
+                Bootstrap Tooltips & Popover
+            </h1>
+        </div>
 
-   		</div>
+        <h3>Tooltip</h3>
+        <button type="button" class="btn btn-default"
+         data-toggle="tooltip" data-placement="left" title="Entrar">
+            Logar
+        </button>
+        <br><br>
 
+        <div class="btn-toolbar">   
+            <div class="btn-group">
+                <button type="button" class="btn btn-default" 
+                data-toggle="tooltip" data-placement="left" title="Play">
+                    <span class="glyphicon glyphicon-play"></span>
+                </button>
+
+                <button type="button" class="btn btn-default"
+                 data-toggle="tooltip" data-placement="left" title="Pause">
+                   <span class="glyphicon glyphicon-pause"></span> 
+                </button>
+
+                <button type="button" class="btn btn-default"
+                data-toggle="tooltip" data-placement="left" title="Stop">
+                    <span class="glyphicon glyphicon-stop"></span>
+                </button>
+            </div>
+        </div>
+
+        <h3>Popover</h3>
+        <button type="button" class="btn btn-danger">Detalhes</button>
    	</div> 
-
+     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
+    
     <script type="text/javascript">
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       }) 
     </script>
-
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
