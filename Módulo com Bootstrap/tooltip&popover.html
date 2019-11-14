@@ -38,35 +38,40 @@
         <div class="btn-toolbar">   
             <div class="btn-group">
                 <button type="button" class="btn btn-default" 
-                data-toggle="tooltip" data-placement="left" title="Play">
-                    <span class="glyphicon glyphicon-play"></span>
+                    data-toggle="tooltip" data-placement="top" title="Tocar">
+                  <span class="glyphicon glyphicon-play"></span>
                 </button>
 
                 <button type="button" class="btn btn-default"
-                 data-toggle="tooltip" data-placement="left" title="Pause">
-                   <span class="glyphicon glyphicon-pause"></span> 
+                    data-toggle="tooltip" data-placement="top" title="Pausar">
+                  <span class="glyphicon glyphicon-pause"></span> 
                 </button>
 
                 <button type="button" class="btn btn-default"
-                data-toggle="tooltip" data-placement="left" title="Stop">
-                    <span class="glyphicon glyphicon-stop"></span>
+                      data-toggle="tooltip" data-placement="top" title="Parar">
+                  <span class="glyphicon glyphicon-stop"></span>
                 </button>
             </div>
         </div>
 
         <h3>Popover</h3>
-        <button type="button" class="btn btn-danger">Detalhes</button>
+        <button type="button" class="btn btn-danger" 
+          data-toggle="popover" data-placement="right" 
+          title="Detalhes!" data-content="Lorem Iosum coler">
+        Detalhes
+      </button>
    	</div> 
      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    
+
     <script type="text/javascript">
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
       }) 
     </script>
-    
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
