@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tooltips & Popover</title>
+    <title>Tabs</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,44 +23,41 @@
    	<div class="container">
 
    		<div class="page-header">
-            <h1>
-                Bootstrap Tooltips & Popover
-            </h1>
-        </div>
+            <h1>Bootstrap Tabs</h1>
+            <p class="lead">Alterne facilmente entre conteúdos</p>
+        </div> <!--Page header-->
 
-        <h3>Tooltip</h3>
-        <button type="button" class="btn btn-default"
-         data-toggle="tooltip" data-placement="left" title="Entrar">
-            Logar
-        </button>
-        <br><br>
+        <!--Criação das abas-->
+        <ul class="nav nav-pills" role="tablist">
+            <li class="active"><a href="#informacoes" role="tab" data-toggle="tab">Informações</a></li>
+            <li><a href="#avaliacoes" role="tab" data-toggle="tab">Avaliações</a></li>
+            <li><a href="#compre" role="tab" data-toggle="tab">Compre também</a></li>
+        </ul>
 
-        <div class="btn-toolbar">   
-            <div class="btn-group">
-                <button type="button" class="btn btn-default" 
-                    data-toggle="tooltip" data-placement="top" title="Tocar">
-                  <span class="glyphicon glyphicon-play"></span>
-                </button>
+        <!--Conteúdos das abas-->
+        <div class="tab-content">
 
-                <button type="button" class="btn btn-default"
-                    data-toggle="tooltip" data-placement="top" title="Pausar">
-                  <span class="glyphicon glyphicon-pause"></span> 
-                </button>
-
-                <button type="button" class="btn btn-default"
-                      data-toggle="tooltip" data-placement="top" title="Parar">
-                  <span class="glyphicon glyphicon-stop"></span>
-                </button>
+            <!--Aba informações-->
+            <div class="tab-pane active" role="tabpanel" id="informacoes">
+                <h3>Informações</h3>
+                <p>Lorem ipsum seila testado, informações</p>
             </div>
+
+            <!--Aba Avaliações-->
+            <div class="tab-pane" role="tabpanel" id="avaliacoes">
+                <h3>Informações</h3>
+                <p>Lorem ipsum seila testado, Avaliações</p>
+            </div>
+
+            <!--Aba Compre também-->
+            <div class="tab-pane" role="tabpanel" id="compre">
+                <h3>Informações</h3>
+                <p>Lorem ipsum seila testado, Compre também</p>
+            </div>
+
         </div>
 
-        <h3>Popover</h3>
-        <button type="button" class="btn btn-danger" 
-          data-toggle="popover" data-placement="right" 
-          title="Detalhes!" data-content="Lorem Iosum coler">
-        Detalhes
-      </button>
-   	</div> 
+   	</div><!--Container-->
      
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
