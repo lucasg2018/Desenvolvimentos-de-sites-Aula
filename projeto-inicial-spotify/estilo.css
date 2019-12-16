@@ -7,6 +7,7 @@
 /* ========== Layout ========== */
 html, body, .capa{
     height: 100%;
+    overflow: auto;
 }
 
 body{
@@ -37,13 +38,6 @@ nav.navbar-transparente{
     background: rgba(0, 0, 0, 0.6);
 }
 
-.separador{
-    width: 1px;
-    height: 16px;
-    background: white;
-    margin: 16px 10px;
-}
-
 .navbar-inverse.navbar-nav>li>a, footer.nav a{
     color: white;
 }
@@ -70,8 +64,6 @@ nav.navbar-transparente{
 .btn-custom{
     color: white;
     border-radius: 500px;
-    padding: 10px 35px;
-    margin: 0px 15px;
     text-transform: uppercase;
     transition: background 0.4s, color 0.4s;
 }
@@ -131,11 +123,51 @@ nav.navbar-transparente{
 /* ========== Tipografia ========== */
 
 h1{
-    font-size: 100px;
     font-weight: 900;
-    letter-spacing: -9px;
+    letter-spacing: -0.04em;
     margin-bottom: 40px;
 }
+/*Media queries*/
+/*xs < 768*/
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 50px;
+    }
+    .btn-custom{
+        margin: 10px 15px;
+    }
+    .separador{
+        width: 90%;
+        height: 1px;
+        background: white;
+        margin: 16px 15px;
+    }
+}
+/*sm > 768*/
+@media screen and (min-width: 768px){
+    h1{
+        font-size: 70px;
+    }
+    .separador{
+        width: 1px;
+        height: 16px;
+        background: white;
+        margin: 16px 10px;
+    }
+}
+/*md > 992*/
+@media screen and (min-width: 992px){
+    h1{
+        font-size: 80px;
+    }
+}
+/*lg > 1200*/
+@media screen and (min-width: 992px){
+    h1{
+        font-size: 100px;
+    }
+}
+
 h2{
     font-size: 50px;
     font-weight: 700;
